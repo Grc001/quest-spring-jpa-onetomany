@@ -1,3 +1,4 @@
+
 package com.wildcodeschool.wildandwizard.controller;
 
 import com.wildcodeschool.wildandwizard.entity.School;
@@ -47,6 +48,7 @@ public class SchoolController {
         out.addAttribute("allWizards", wizardRepository.findAll());
 
         // call the method getWizards in School
+
         List<Wizard> wizards = new ArrayList<>();
         Method method = getMethod(school, "getWizards",
                 new Class[]{});
